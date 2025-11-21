@@ -10,6 +10,7 @@ bajtów niż program bez obsługi LCD. Bez LCD program też będzie działał, t
 czytelne i niektóre polecenia nie będą widoczne na CA. Również nazwy programów też nie będą widoczne.
  
 https://microgeek.eu/viewtopic.php?f=82&t=2513  - podłączenie LCD
+
 https://microgeek.eu/viewtopic.php?f=82&t=2435 - pamięć masowa FLASH
 
 
