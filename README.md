@@ -12,12 +12,7 @@ czytelne i niektóre polecenia nie będą widoczne na CA. Również nazwy progra
 https://microgeek.eu/viewtopic.php?f=82&t=2513  - podłączenie LCD
 https://microgeek.eu/viewtopic.php?f=82&t=2435 - pamięć masowa FLASH
 
-Tutaj drobna uwaga: moja wersja płytki FLASH V.2 różni się od oryginału:
 
- - dodatkowo trzy jumpery J2, J3 i J4, aby można programować pamięć AT28C256, piny 1-2 są POŁĄCZONE,
-   jeśli nie zamierzamy programować AT28C256, można J2, J3 i J4 nie lutować; jesli tak, musimy 
-   przeciąć ścieżki
- - w U6 włożyłem podstawkę ZIF
  
  Na LCD możemy wyświetlić więcej czytelnych znaków niż na wyświetlaczu CA80. Jeśli mamy nową kość 
 SST39FLxxx, to aby zapisać nasz pierwszy program, musimy na początku FLASH wpisać FD E4 - 
@@ -69,6 +64,8 @@ Zlecenia w MENU:
     /po FD E4 [NR_PR] [CA_OD] / do znalezienia trzech bajtów FF.
  8- wciskając kl. 8 inicjujemy pamięć FLASH, tzn. wpisujemy bajty FD E4 od adr. 0 i potem już możemy wpisywać
     programy.
+
+<img width="1262" height="596" alt="programator_FL" src="https://github.com/user-attachments/assets/5c9fd9b6-1f43-48ca-8ad5-0a354cda2925" />
 
  3 -  to zapis AT28C256 _EEPROM /32 KB/, adres początku zapisu jest dowolny, nie musimy startować od
      adr. 0; pamiętać należy tylko o tym, że adres końcowy zapisu nie może przekraczać 7FFFh !!
