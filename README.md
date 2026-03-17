@@ -1,4 +1,3 @@
-@ -0,0 +1,79 @@
 Program "programator_obsz_SST39F" pozwala obsługiwać pamięć FLASH typu SST39SFxxx /max 512 kB/, włożoną do płytki
 której piny 2-28 podstawki są połaczone z pinami podstawki U10 CA80. Wybieranie adresów większych od
 4000h przy pomocy portu użytkownika 8255 /PB0-PB4 - A14 do A18/
