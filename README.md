@@ -29,6 +29,7 @@ Zlecenia w MENU:
 
  0- kasowanie /uwaga !!!/ pamięci FLASH - CAŁEJ /klawisz C/ lub jednego, wybranego sektora /klaw. 2/, 
     wybór w menu na LCD
+    
  1- szukanie numeru, który jest "pierwszy wolny" podczas zapisywania programu- nadanie numeru programu,
     numer zostanie wyświetlony na LCD i CA80
     
