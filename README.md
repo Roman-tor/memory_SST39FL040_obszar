@@ -1,6 +1,5 @@
-Program "programator_obsz_SST39F" pozwala obsługiwać pamięć FLASH typu SST39SFxxx /max 512 kB/, włożoną do płytki
-której piny 2-28 podstawki są połaczone z pinami podstawki U10 CA80. Wybieranie adresów większych od
-4000h przy pomocy portu użytkownika 8255 /PB0-PB4 - A14 do A18/. 
+Program "programator_obsz_SST39F" pozwala obsługiwać pamięć FLASH typu SST39SFxxx /max 512 kB/ i AT28C256 / zworki/.
+W mojej wersji, płytka PCB jest znacznie mniejsza (ok. 50x90 mm), brak dodatkowych układów scalonych (oczywiście oprócz samej pamięci), podłączona do pinów podstawki U10 /patrz schemat/ ale sterowanie jest inne: adresy A0-A13 z linii adresowej CA80 a A14-A18 z portu PB0-PB4 układu 8255 (port użytkownika), linia danych, sygnały CE, WR. RD „pobierane” są z podstawki U10 (tam gdzie RAM od 4000h). Dzięki temu zabiegowi, nie potrzebujemy dodatkowych chipów do wybierania adresów w całym zakresie 512 KB. Mam wyprowadzony kabel płaski, taki jak od dawnych dysków HDD, 34-pinowy, dolutowany do płytki PCB MIK290 /U10/. Dodatkowo, wyjście CE_ U10 /pin 10 U4-74138/ jest rozdzielone - przecięta ścieżka i dołożona zworka 3-piny/. Sygnał idzie na zewnątrz - do FLASH albo do U10. Dzięki temu, nie musimy wyciągać pamięci RAM jeśli tam jest włożona.
 
 Możemy użyć FLASH o mniejszej pojemności ale wówczas musimy zmienić sprawdzanie końca pamięci FLASH, 
 etykieta "SEKT_END" /dla 512 kB to 7F, dla 256-3F a 128 - 1F Możemy pamięć zapisywać, odczytywać i 
